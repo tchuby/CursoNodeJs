@@ -1,0 +1,17 @@
+<h1>Olá Handles</h1>
+<h2>Usuário {{user.name}} {{user.surname}}</h2>
+<div>
+{{#if auth}}
+    <p>
+        Autenticado,
+        <a href="/dashboard">Vai..</a>
+    </p>
+{{/if}}
+
+{{#if approved}}
+    <p>Cadastro aprovado</p>
+{{else}}
+    <p>Cadastro pendente</p>
+{{/if}}
+</div>
+<a href="/blogpost">Blogpost</a>
